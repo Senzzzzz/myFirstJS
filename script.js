@@ -1,9 +1,1 @@
-
-const firstName = "sen"
-const lastName = "zhao"
-
-function greeting() {
-  console.log('hi there, ' + firstName + lastName)
-}
-
-greeting()
+const title = document.querySelector(".h1").textContent = "bonobo"
