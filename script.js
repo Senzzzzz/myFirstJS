@@ -19,10 +19,6 @@ saveInputBtn.addEventListener("click", ()  => {
   render(myLeads) 
 })
 
-const tempURL = [
-  {url: "www.google.com"}
-]
-
 saveTabBtn.addEventListener("click", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     myLeads.push(tabs[0].url)
