@@ -1,18 +1,36 @@
-let printableAscii = [];
-for (let i = 32; i <= 126; i++) {
-  printableAscii.push(String.fromCharCode(i));
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const list = document.getElementById('ul-el')
+
+
+inputBtn.addEventListener("click", function () {
+  myLeads.push(inputEl.value)
+  render()
+  inputEl.value = ""
+})
+
+function render(value) {
+  // list.innerHTML = myLeads.map((lead) => `<li>${lead}</li>`).join("")
+
+  // list.innerHTML = ""
+  // for (i = 0; i < myLeads.length; i++) {
+  //     const li =  document.createElement('li')
+  //     li.innerHTML = myLeads[i]
+  //     list.appendChild(li)
+  //   }
+
+  listItems = `
+    <li>
+        <a target='_blank' href="">
+          ${inputEl.value}
+        </a>
+    </li>`
+  list.innerHTML += listItems
+ 
 }
 
 
-function passWordGeneration() {
-  const passWord = []
-  for (i = 0; i < printableAscii.length; i++) {
-    const randomPassword = Math.floor(Math.random() * printableAscii.length)
-    const generatedPassword = printableAscii[randomPassword]
-    passWord.push(generatedPassword)
-  }
-  return passWord.join("")
-}
 
-
-console.log(passWordGeneration())
+const string = Number("1234")
+console.log(typeof(string))

@@ -1,27 +1,24 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  width: 500px;
-  height: 300px;
-  border: 5px red solid;
-  border-radius: 10px;
+#input-el {
+  width: 100%;
+  border: rgb(98, 200, 98) 2px solid;
+  box-sizing: border-box;
 }
 
-.emoji-container {
-  display: flex;
-  gap: 50px;
+#input-btn {
+  width: 100px;
+  background-color: rgb(98, 200, 98);
+  margin-top: 5px;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  color: white;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: column;
+#input-btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
