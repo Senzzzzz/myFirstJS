@@ -3,7 +3,7 @@
   "version": "1.0",
   "name": "Leads tracker",
   "action": {
-    "default_popup": "myFirstJS.html"
+    "default_popup": "myFirstJavaScript.html"
   },
   "permissions": ["tabs"]
 }
